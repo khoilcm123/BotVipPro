@@ -3,7 +3,7 @@ module.exports = {
   aliases: ["randomnum"],
   category: "📋 School Commands",
   description: "\`Hiển thị một số ngẫu nhiên\`",
-  usage: "random <MIN. NUM> <MAX. NUM>",
+  usage: "random MIN NUM ot MAX NUM>",
   run: async (client, message, args) => {
   //command
   let min = args[0];
