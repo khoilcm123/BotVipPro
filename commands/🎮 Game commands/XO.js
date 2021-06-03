@@ -6,7 +6,7 @@ module.exports = {
     name: "x-o",
     aliases: ["x--o"],
     category: "🎮 Game commands",
-    description: "\`Chơi game\` ❌ ⭕ \`cùng với thanh niên bố đời nào đó\`",
+    description: "\`Chơi game\` ❌ ⭕ \`cùng với bạn nào đó\`",
     usage:"!x-o @tag tên người muốn chơi cùng",
 
     run: async (client, message, args) => {
