@@ -9,8 +9,8 @@ module.exports = function (client, options) {
     }
     let disabled = new MessageEmbed()
     .setColor(config.colors.no)
-    .setTitle("Chủ sở hữu của bạn đã vô hiệu hóa COUNTER-Trò chuyện! Lấy làm tiếc")
-    .setFooter("Nguyễn vinh", config.AVATARURL)
+    .setTitle("Khôi đã vô hiệu hóa COUNTER-Trò chuyện! Lấy làm tiếc")
+    .setFooter("Khôi Lâm", config.AVATARURL)
     .setThumbnail(config.AVATARURL)
     console.log(` :: ⬜️ Module: ${description.name} | Phiên bản đã tải ${description.version} từ ("${description.filename}")`.bold.green)
 
