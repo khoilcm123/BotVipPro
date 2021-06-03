@@ -104,7 +104,7 @@ module.exports = {
     \u200b
     `)
     
-    .addField("***BOT MADE IN:***", `
+    .addField("***Bot Wibu***", `
     >>> <@788208207465938954>  \`VinhBot#3466\` [FACEBOOK](https://www.facebook.com/profile.php?id=100063748987527)
     `) .addField("***SUPPORT:***", `
     >>> [DISCORD]() || [MỜI BOT](https://discord.com/api/oauth2/authorize?client_id=842012619320983573&permissions=0&scope=bot)
