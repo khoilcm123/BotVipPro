@@ -12,7 +12,7 @@ module.exports = {
         .setTitle("Invite BOTS")
         .setDescription(`Hãy [bấn vào đây](https://discord.com/api/oauth2/authorize?client_id=842012619320983573&permissions=0&scope=bot) nếu muốn mời tao vào server
         
-        (VINH ĐẸP TRAI BỐ ĐỜI THẾ)`)
+        (Wibu Bot)`)
         .setFooter(client.user.username, config.AVATARURL)
         
         message.reply(inviteembed);
