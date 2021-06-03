@@ -21,7 +21,7 @@ module.exports = {
 		args.shift(); 
 
 		if(member.roles.highest.position>=message.member.roles.highest.position){
-			return message.reply(":x: \`Tôi không thể bỏ khoá mõm Thành viên này, vì anh ta cao hơn/Bằng vị trí role của bạn\`")
+			return message.reply(":x: \`Tôi không thể bỏ mute Thành viên này, vì anh ta cao hơn/Bằng vị trí role của bạn\`")
 		}
 
 		if(!message.guild.me.hasPermission("MANAGE_ROLES")) return message.reply("❌ \`Tôi cần quyền để Quản lý role\`");
@@ -37,7 +37,7 @@ module.exports = {
 			}
 		}
 		if (!mutedrole) {
-			return message.reply(":x: \`Bạn chưa bao giờ khoá mõm ai đó, chưa có role nào bị khoá mõm!\`")
+			return message.reply(":x: \`Bạn chưa bao giờ mute mà!\`")
 		}
 		if(!message.member.hasPermission("ADMINISTRATOR") && mutedrole.position > message.guild.me.roles.highest.position){
 			return message.reply(":x: \`Tôi không thể truy cập role, vì nó ở trên tôi!\`")
