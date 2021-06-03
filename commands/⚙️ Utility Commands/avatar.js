@@ -4,7 +4,7 @@ module.exports = {
     name: 'avt',
     aliases:['a', 'avatar', 'ảnh đại diện'],
     category: 'fun',
-    usage:".avt < @ người cần xem VD: .avt @vinh>",
+    usage:".avt < @ người cần xem VD: .avt @Khôi Bôi Trơn>",
     description: "Xem avatar của bạn và bạn bè trong server",
     run: async (client, message, args) => {
         message.delete()
