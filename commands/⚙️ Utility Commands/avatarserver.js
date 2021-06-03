@@ -13,9 +13,9 @@ module.exports = {
         
         const embed = new Discord.MessageEmbed()
 
-        .setTitle(`AVARTAR CỦA ${message.guild.name}`)
+        .setTitle(`Avatar của ${message.guild.name}`)
         .setImage(message.guild.iconURL({ dynamic: true, size: 1024 }))
-        .setFooter(`Bot made in Nguyễn vinh | yêu cầu bởi: ${message.member.displayName}`,  message.author.displayAvatarURL({ dynamic: true }))
+        .setFooter(`Bot Wibu | yêu cầu bởi: ${message.member.displayName}`,  message.author.displayAvatarURL({ dynamic: true }))
         .setTimestamp()
         .setColor(message.guild.me.displayHexColor)
 
