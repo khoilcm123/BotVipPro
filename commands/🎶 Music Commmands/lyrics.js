@@ -11,7 +11,7 @@ module.exports = {
   description: "\`Hiển thị cho bạn Lời bài hát đang phát HIỆN TẠI, ..\`",
   run: async (client, message, args) => {
   
-       if (!client.distube.isPlaying(message)) return functions.embedbuilder(client, 3000, message, config.colors.no, "❌ \`Không có bài nào được phát\`")
+       if (!client.distube.isPlaying(message)) return functions.embedbuilder(client, 3000, message, config.colors.no, "Không có bài nào được phát!")
     if (!message.member.voice.channel) return functions.embedbuilder(client, 5000, message, config.colors.no, "`" + message.author.tag + "`"  + "Bạn phải tham gia Kênh Voice nào đó\`")
      if (client.distube.isPlaying(message) && message.member.voice.channel.id !== message.member.guild.me.voice.channel.id) return functions.embedbuilder(client, 5000, message, config.colors.no, "`" + message.author.tag + "`"  + "\`Bạn phải tham gia Kênh Voice của tôi:\` " + ` \`${message.member.guild.me.voice.channel.name ? message.member.guild.me.voice.channel.name : ""}\``)
           
@@ -84,4 +84,4 @@ module.exports = {
     }
   }
   };
- // Vinh đẹp trai bố đời thế
+ // Wibu Bot
