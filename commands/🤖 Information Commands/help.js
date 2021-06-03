@@ -43,13 +43,13 @@ module.exports = {
       });
 
       const embed = new MessageEmbed()
-        .setTitle("Vinh đẹp trai bố đời thế : HELP COMMANDS")
+        .setTitle("Wibu Bot : HELP COMMANDS")
         .addFields(categories)
         .setDescription(
           `Sử dụng\`!help\` theo sau là tên lệnh để biết thêm thông tin về lệnh. Ví dụ: \`!help < Tên lệnh con >\``
         )
         .setFooter(
-          `Bot made in Nguyễn vinh | yêu cầu bởi: ${message.author.tag}`,
+          `Wibu Bot của Khôi | yêu cầu bởi: ${message.author.tag}`,
           message.author.displayAvatarURL({ dynamic: true })
         )
         .setTimestamp()
@@ -64,7 +64,7 @@ module.exports = {
 
       if (!command) {
         const embed = new MessageEmbed()
-          .setTitle(`Ngáo đá à ? Tao làm đéo gì có lệnh đấy ? ,help để xem các lệnh hiện có`)
+          .setTitle(`Mình không có lệnh đấy ? ,help để xem các lệnh hiện có`)
           .setColor("FF0000");
         return message.channel.send(embed);
       }
@@ -95,7 +95,7 @@ module.exports = {
             : "\`Không có mô tả cho lệnh này\`"
         )
         .setFooter(
-          `Bot made in Nguyễn vinh | yêu cầu bởi ${message.author.tag}`,
+          `Wibu Bot của Khôi | yêu cầu bởi ${message.author.tag}`,
           message.author.displayAvatarURL({ dynamic: true })
         )
         .setTimestamp()
