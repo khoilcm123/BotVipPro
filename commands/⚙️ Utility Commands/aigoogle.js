@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
     name: "aigoogle",
     category: "⚙️ Utility Commands",
-    description: "\`Dành cho thằng nào lười sử dụng google\`",
+    description: "\`Dành cho ai lười mở google\`",
     usage: ".google <câu hỏi>",
     run: async (client, message, args) => {
         if (message.deletable) await message.delete();
@@ -12,7 +12,7 @@ module.exports = {
         const embed = new MessageEmbed()
             .setTitle('Câu trả lời của bạn đây')
             .setURL(link)
-            .setFooter('Click vào link ở trên');
+            .setFooter('Click vào link ở trên!');
         message.channel.send(embed);
     },
 };
