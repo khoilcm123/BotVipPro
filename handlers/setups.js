@@ -10,7 +10,7 @@ module.exports = (client) => {
         setInterval(() => {
            stateswitch = !stateswitch; //thay đổi trạng thái
            if (stateswitch) client.user.setActivity(`${config.prefix}Wibu Impact`, { type: "PLAYING" });
-           else client.user.setActivity(`${client.guilds.cache.reduce((c, g) => c + g.memberCount, 0)} Thành viên 😂 | ${client.guilds.cache.size} Server 🤭`, { type: "PLAYING" }); 
+           else client.user.setActivity(`${client.guilds.cache.reduce((c, g) => c + g.memberCount, 0)} Thành viên :3 | ${client.guilds.cache.size} Server 🤭`, { type: "PLAYING" }); 
 
         }, 5000); 
     
