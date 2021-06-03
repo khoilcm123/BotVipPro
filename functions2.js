@@ -32,7 +32,7 @@ module.exports = {
         try {
             let embed = new Discord.MessageEmbed()
                 .setColor(color)
-                .setAuthor(message.author.tag , message.member.user.displayAvatarURL({ dynamic: true }), "Vinh đẹp trai bố đời thế")
+                .setAuthor(message.author.tag , message.member.user.displayAvatarURL({ dynamic: true }), "Avatar đây !!")
                 .setFooter(client.user.username, client.user.displayAvatarURL());
             if (title) embed.setTitle(title);
             if (description) embed.setDescription(description);
@@ -110,7 +110,7 @@ module.exports = {
             let embed1 = new Discord.MessageEmbed()
     
             .setColor(config.colors.no)
-            .setTitle("🇻🇳 VINH ĐẸP TRAI BỐ ĐỜI THẾ 🇻🇳")
+            .setTitle("🇻🇳 The radio 🇻🇳")
             .setDescription(`Bắt đầu hátttt: [\`${song.name}\`](${song.url})`)
             .addField("💡 Được yêu cầu bởi:", `>>> ${song.user}`, true)
             .addField("⏱ Thời lượng:", `>>> \`${queue.formattedCurrentTime} / ${song.formattedDuration}\``, true)
@@ -138,7 +138,7 @@ module.exports = {
                     await playingMessage.react("805375191307649055");
                 }
                 catch (error) {
-                    functions.embedbuilder(5000, message, config.colors.no, "ERROR: ", "```" + error.toString().substr(0, 100) + "```" + "\n\n**Đã gửi lỗi cho chủ sở hữu của tôi!**")
+                    functions.embedbuilder(5000, message, config.colors.no, "ERROR: ", "```" + error.toString().substr(0, 100) + "```" + "\n\n**Đã gửi lỗi cho Khôi!**")
                     functions. errorbuilder(error.stack.toString().substr(0, 2000))
                     console.log(error.stack.toString().red);
                 }
