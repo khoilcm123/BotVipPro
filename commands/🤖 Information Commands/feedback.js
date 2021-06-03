@@ -5,7 +5,7 @@ const log = require('../../assets/json/channels.json');
 module.exports = {
     name: "phanhoi",
     category: "🇻🇳 ",
-    description: "\`cung cấp cho vinh một phản hồi để có thêm ý kiến nâng cấp bot \`",
+    description: "\`cung cấp cho Khôi một phản hồi để có thêm ý kiến nâng cấp bot \`",
     example: `${config.Prefix}phanhoi nâng cấp bot `,
 
     run: async (client, message, args) => {
@@ -28,6 +28,6 @@ module.exports = {
 
     Channel.send(Embed);
 
-    await message.channel.send(`💯 \`đã gửi phản hồi đến cho vinh đẹp trai bố đời!\``)
+    await message.channel.send(`💯 \`đã gửi phản hồi đến cho Khôi!\``)
     }
 }
