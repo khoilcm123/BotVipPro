@@ -13,7 +13,7 @@ module.exports = {
     let isdj=false;
     let leftb = "";
         if(client.settings.get(message.guild.id, `djroles`).join("") === "") 
-            leftb = "❌ \`không có Kênh, hay còn gọi là tất cả các Kênh đều là Kênh Bot\`"
+            leftb = "Không tìm thấy kênh!"
         else
             for(let i = 0; i < client.settings.get(message.guild.id, `djroles`).length; i++){
                     if(message.member.roles.cache.has(client.settings.get(message.guild.id, `djroles`)[i])) isdj = true;
@@ -31,7 +31,7 @@ module.exports = {
      if(!args[0]) return functions.embedbuilder(client, 5000, message, config.colors.no, "`" + message.author.tag + "`"  + "\`Vui lòng thêm nội dung bạn muốn tìm kiếm \`")
 
     let queue = client.distube.getQueue(message);
-    if (!queue) return functions.embedbuilder(client, 3000, message, config.colors.no, "❌ \`Không có bài nào được phát\`");
+    if (!queue) return functions.embedbuilder(client, 3000, message, config.colors.no, "Không có bài nào được phát!");
 
     if (0 <= Number(args[0]) && Number(args[0]) <= queue.songs.length) {
         functions.embedbuilder(client, 3000, message, config.colors.yes, "SUCCESS", `✔️ \`Đã nhảy ${parseInt(args[0])} bài hát\``)
@@ -44,4 +44,4 @@ module.exports = {
   }
   };
 
- // Vinh đẹp trai bố đời thế 
+ // Wibu Bot 
