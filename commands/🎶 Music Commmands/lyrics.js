@@ -12,13 +12,13 @@ module.exports = {
   run: async (client, message, args) => {
   
        if (!client.distube.isPlaying(message)) return functions.embedbuilder(client, 3000, message, config.colors.no, "❌ \`Không có bài nào được phát\`")
-    if (!message.member.voice.channel) return functions.embedbuilder(client, 5000, message, config.colors.no, "`" + message.author.tag + "`"  + "❌ \`Bạn phải tham gia Kênh Voice nào đó\`")
+    if (!message.member.voice.channel) return functions.embedbuilder(client, 5000, message, config.colors.no, "`" + message.author.tag + "`"  + "Bạn phải tham gia Kênh Voice nào đó\`")
      if (client.distube.isPlaying(message) && message.member.voice.channel.id !== message.member.guild.me.voice.channel.id) return functions.embedbuilder(client, 5000, message, config.colors.no, "`" + message.author.tag + "`"  + "\`Bạn phải tham gia Kênh Voice của tôi:\` " + ` \`${message.member.guild.me.voice.channel.name ? message.member.guild.me.voice.channel.name : ""}\``)
           
 
     let queue = client.distube.getQueue(message);
 
-    if (!queue) return functions.embedbuilder(client, "null", message, config.colors.no, "❌ \`Không có bài nào được phát\`");
+    if (!queue) return functions.embedbuilder(client, "null", message, config.colors.no, "Không có bài nào được phát!");
 
     let cursong = queue.songs[0];
     functions.embedbuilder(client, 3000, message, config.colors.yes, "Đang tìm kiếm!", cursong.name);
@@ -76,7 +76,7 @@ module.exports = {
                 await reaction.users.remove(message.author.id);
             } catch (error) {
                 console.error(error);
-                functions.embedbuilder(client, 5000, message, config.colors.no, "ERROR: ", "```" + error.toString().substr(0, 100) + "```" + "\n\n\`Đã gửi lỗi cho chủ sở hữu của tôi\`")
+                functions.embedbuilder(client, 5000, message, config.colors.no, "ERROR: ", "```" + error.toString().substr(0, 100) + "```" + "\n\n\`Đã gửi lỗi cho Khôi\`")
                 functions.errorbuilder(error.stack.toString().substr(0, 2000))
             }
         });
