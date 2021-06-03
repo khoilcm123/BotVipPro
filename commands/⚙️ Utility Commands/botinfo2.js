@@ -9,7 +9,7 @@ const config = require("../../config.json")
 module.exports = {
     name: "botinfo2",
     category: "⚙️ Utility Commands",
-  description: "😹 \`Gửi thông tin chi tiết về VINH ĐẸP TRAI BỐ ĐỜI\` 🇻🇳",
+  description: " Thông tin chi tiết về bạn Khôi!",
   usage: "botinfo2",
   run: async (client, message, args) => {
   
