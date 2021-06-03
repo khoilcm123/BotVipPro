@@ -10,7 +10,7 @@ module.exports = {
 
          const search = `${args}`;
          if(!search)
-         return message.reply('❌ \`Vui lòng thêm tên để tìm kiếm nếu lệnh không hợp lệ sẽ không hoạt động\`');
+         return message.reply(' Vui lòng thêm tên để tìm kiếm nếu lệnh không hợp lệ sẽ không hoạt động ');
 
         malScraper.getInfoFromName(search)
            .then((data) => {
