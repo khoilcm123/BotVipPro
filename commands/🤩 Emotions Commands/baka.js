@@ -10,7 +10,7 @@ module.exports = {
   run: async (client, message, args) => {
         const user = message.mentions.users.first();
         if(!user)
-        return message.reply('❌\`Đề cập đến ai đó gọi idot tới\`');
+        return message.reply('Đề cập đến ai đó');
 
         async function work() {
         let owo = (await neko.sfw.baka());
