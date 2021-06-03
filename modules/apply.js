@@ -11,7 +11,7 @@ module.exports = function (client, options) {
     let disabled = new MessageEmbed()
     .setColor(config.colors.no)
     .setTitle("Chủ sở hữu của bạn đã vô hiệu hóa HỆ THỐNG ỨNG DỤNG! Lấy làm tiếc")
-    .setFooter("Nguyễn Vinh", config.AVATARURL)
+    .setFooter("Khôi Lâm", config.AVATARURL)
     .setThumbnail(config.AVATARURL)
     console.log(` :: ⬜️ Module: ${description.name} | đã sẵn sàng ${description.version} từ ("${description.filename}")`.bold.green )
 
@@ -50,10 +50,10 @@ module.exports = function (client, options) {
                       ask_question(act);
                   }).catch(error=>{
                       console.log(error)
-                      return message.channel.send(`${user}, XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!`).then(msg=> msg.delete({timeout: 3000}))
+                      return message.channel.send(`${user}, Ôi bạn ơi, thời gian của bạn đã hết!`).then(msg=> msg.delete({timeout: 3000}))
                   })
               }).catch(e => {
-                reaction.message.channel.send(`${user}, LẤY LÀM TIẾC! Nhưng tôi không thể dm bạn:'(`).then(msg=> msg.delete({timeout: 3000}))
+                reaction.message.channel.send(`${user}, LẤY LÀM TIẾC! Nhưng tôi không thể nha bạn:'(`).then(msg=> msg.delete({timeout: 3000}))
                 
                 console.log("APPLY:".underline.red + " :: " + e.stack.toString().red)});
           }
@@ -122,7 +122,7 @@ module.exports = function (client, options) {
               .setFooter("Bởi  |  " + user.tag, user.displayAvatarURL({dynamic:true}))
               .setDescription(client.apply.get(message.guild.id, "accept"))
               let usert = await client.users.fetch(client.apply.get(message.id, "temp"))
-              usert.send(approve).catch(e => {message.channel.send("COULDN KHÔNG DM NGƯỜI NÀY!");console.log("APPLY:".underline.red + " :: " + e.stack.toString().red)});
+              usert.send(approve).catch(e => {message.channel.send("Nope!");console.log("APPLY:".underline.red + " :: " + e.stack.toString().red)});
             }
             if (reaction.emoji.name === "❌")  {
               embed.setColor("RED")
