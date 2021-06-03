@@ -19,7 +19,7 @@ const Discord = require("discord.js");
       let embed = new Discord.MessageEmbed()
       .setColor(config.colors.yes)
       .setThumbnail("https://imgur.com/0DQuCgg.png")
-      .setFooter("cung cấp bởi: Nguyễn Vinh", config.AVATARURL)
+      .setFooter("cung cấp bởi: Google dịch", config.AVATARURL)
       .addField(`Từ: \`${args[0]}\``.substr(0, 256), args.slice(2).join(" ").substr(0, 1024))
       .addField("\u200B", "\u200B")
       .addField(`Đến: \`${args[1]}\``.substr(0, 256), res.text.substr(0, 1024))
