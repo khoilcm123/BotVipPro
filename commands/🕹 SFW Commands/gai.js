@@ -4,7 +4,7 @@ const { readdirSync, readFileSync } = require('fs');
 module.exports = {
     name: 'girl',
     category: 'vui',
-    description: '\`Show ảnh gái xD ( nếu có ảnh gái xinh thì hãy liên hệ với vinh để add vào nhé )\`',
+    description: '\`Show ảnh gái xD ( Thêm vào cho có )\`',
     aliases: ['xinh', 'gái', 'gai'],
     usage:"!gái",
     cooldown: 3,
