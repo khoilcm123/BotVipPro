@@ -23,7 +23,7 @@ async function getAll(client, message) {
     const embed = new MessageEmbed()
         .setColor(config.colors.yes).setFooter(client.user.username, config.AVATARURL)
         .addField("**__Thông tin OWNER:__**", `
-        >>> <@788208207465938954> \`VinhBot#3466\` [FACEBOOK](https://www.facebook.com/profile.php?id=100063748987527) | [MỜI BOT](https://discord.com/api/oauth2/authorize?client_id=842012619320983573&permissions=0&scope=bot)
+        >>> <@788208207465938954> \`Khôi Bôi Trơn\` [FACEBOOK](https://www.facebook.com/Khoilcm.vn/) | [MỜI BOT](https://discord.com/api/oauth2/authorize?client_id=824484909002260511&permissions=0&scope=bot)
         `)
         .setFooter(`Để xem mô tả lệnh và kiểu sử dụng: ${prefix}help [CMD Name]`, config.AVATARURL)
         .setTitle(`Help Menu\n\nPrefix: \`${prefix}\``)
