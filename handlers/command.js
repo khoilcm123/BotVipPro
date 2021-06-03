@@ -7,7 +7,7 @@ const functions = require("../functions");
 const { id } = require("common-tags");
 const { ReactionUserManager } = require("discord.js");
 table.setHeading("Command", "Load status");
-console.log("Vinh đẹp trai bố đời thế".brightYellow)
+console.log("Wibu Bot".brightYellow)
 module.exports = (client) => {
     readdirSync("./commands/").forEach(dir => {
         const commands = readdirSync(`./commands/${dir}/`).filter(file => file.endsWith(".js"));
@@ -192,6 +192,6 @@ const guildonlycounter = new Map();
     });
 
     console.log(table.toString().brightCyan);
-    console.log("Welcome to HANDLER SERVICE //// BOT MADE IN: NGUYỄN VINH".brightYellow)
+    console.log("Welcome to HANDLER SERVICE //// Wibu Bot".brightYellow)
 	console.log("Sẵn sàng hoạt động...".brightGreen);
 }
