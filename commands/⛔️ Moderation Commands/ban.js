@@ -5,25 +5,25 @@ module.exports = {
     name: "ban",
     category: "",
     aliases:['bn', 'cấm', 'ra đảo', 'biến', 'cút', 'out'],
-    description: "\`ban 1 thằng ất ơ, ngáo đá, toxic nào đấy khỏi server\`",
+    description: "ban 1 thằng ất ơ, ngáo đá, toxic nào đấy khỏi server!",
     run: async(client,message, args) => {
         const logChannel = message.guild.channels.cache.get() || message.channel;
 
         if (message.deletable) message.delete();
 
         // No args
-        if (!args[0]) return message.reply("\`Bờ rồ mày phải tag 1 ai đấy thì tao mới biết để mà ban nó chứ ?\`").then(m => m.delete({ timeout: 5000 }));
+        if (!args[0]) return message.reply("Phải tag tên người bạn muốn cho cút chứ!").then(m => m.delete({ timeout: 5000 }));
         const reason = args.slice(1).join(' ') || "\`Không có\`";
 
         // No author permissions
         if (!message.member.hasPermission("BAN_MEMBERS")) {
-            return message.reply("\`❌ Thôi thôi ông ơi...ông làm đéo gì có quyền mà ban người ta ?\`")
+            return message.reply("Ôi bạn ơi, bạn làm gì có quyền ban người ta")
                 .then(m => m.delete({ timeout: 5000 }));
 
         }
         // No bot permissions
         if (!message.guild.me.hasPermission("BAN_MEMBERS")) {
-            return message.reply("\`❌ Tao làm đéo gì có quyền ban người ta...Kiểm tra lại hộ phát\`")
+            return message.reply("Mình không có quyền ban bạn ơi")
                 .then(m => m.delete({ timeout: 5000 }));
         }
 
@@ -31,19 +31,19 @@ module.exports = {
 
         // No member found
         if (!toBan) {
-            return message.reply("\`Tìm thấy nó đéo đâu mà đòi ban, khổ thật đấy\`")
+            return message.reply("Tìm không được bạn ơi!")
                 .then(m => m.delete({ timeout: 5000 }));
         }
 
         // Can't ban urself
         if (toBan.id === message.author.id) {
-            return message.reply("\`Bờ rồ mày không thể tự ban chính mày được...ảo thật đấy\`")
+            return message.reply("Ban chính mình sao dc ! Khác gì tự ** ** đâu")
                 .then(m => m.delete({ timeout: 5000 }));
         }
 
         // Check if the user's banable
         if (!toBan.bannable) {
-            return message.reply("\`Tao chịu đéo ban được nó đâu ROLE nó cao hơn tao thì ban = mắt à?\`")
+            return message.reply("Bạn ấy role xịn hơn mình!")
                 .then(m => m.delete({ timeout: 5000 }));
         }
 
@@ -52,8 +52,8 @@ module.exports = {
             .setThumbnail(toBan.user.displayAvatarURL())
             .setFooter(message.member.displayName, message.author.displayAvatarURL())
             .setTimestamp()
-            .addField('🇻🇳\`VINH ĐẸP TRAI SERVER BAN :))\`🇻🇳', [
-                `**- Đã đá thằng:** ${toBan} (${toBan.id})`,
+            .addField(' ---- Thực thi ----', [
+                `**- Đã đá tuổi trẻ:** ${toBan} (${toBan.id})`,
                 `**- Người đá:** ${message.member} (${message.member.id})`,
                 `**- Lý do:** ${reason}`,
             ]);
