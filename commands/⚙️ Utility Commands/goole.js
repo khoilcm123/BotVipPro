@@ -25,7 +25,7 @@ module.exports = {
     .setImage(href.pagemap ? href.pagemap.cse_thumbnail[0].src : null)
     .setURL(href.link)
     .setColor("RANDOM")
-    .setFooter("Bot made in Nguyễn Vinh")
+    .setFooter(" Bot Wibu")
 
     return message.channel.send(embed);
 
