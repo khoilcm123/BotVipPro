@@ -7,13 +7,13 @@ module.exports = {
   name: "calc",
   aliases: ["calculate"],
   category: "📋 School Commands",
-  description: "💻 \`Tính toán một phương trình toán học\`",
+  description: "💻 Tính toán một phương trình toán học!",
   usage: "[command | input]",
   run: async (client, message, args) => {
   //command
   
   if(args.length < 1)
-  return message.reply(`\`Bạn phải cung cấp một phương trình để giải trên máy tính\``);
+  return message.reply(`Bạn phải cung cấp một phương trình để giải trên máy tính!`);
 
 const question = args.join(' ');
 
