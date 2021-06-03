@@ -9,8 +9,8 @@ module.exports = function (client, options) {
     }
     let disabled = new MessageEmbed()
     .setColor(config.colors.no)
-    .setTitle("Chủ sở hữu của bạn đã tắt AI-Chat! Lấy làm tiếc")
-    .setFooter("Nguyễn Vinh", config.AVATARURL)
+    .setTitle("Khôi đã tắt AI-Chat! Lấy làm tiếc")
+    .setFooter("Khôi Lâm", config.AVATARURL)
     .setThumbnail(config.AVATARURL)
     console.log(` :: ⬜️ Module: ${description.name} | Phiên bản đã tải ${description.version} từ ("${description.filename}")`.bold.green)
 
