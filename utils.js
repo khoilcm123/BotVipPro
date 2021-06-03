@@ -26,7 +26,7 @@ exports.formatNumber = (number) => {
 const randomFooter = () => {
     return exports.randomSelection([
         'Wibu Bot',
-        'Wibu Bot',
+        'Wibu Bot x FX 580ti',
     ]);
 };
 
