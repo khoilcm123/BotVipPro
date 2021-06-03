@@ -27,7 +27,7 @@ module.exports = {
 **8.** \`Logger System\`
 **9.** \`Application System\`
 **10.** \`Reaction Role System\`
-`).addField("**__facebook__**", "https://www.facebook.com/profile.php?id=100063748987527")
+`).addField("**__facebook__**", "https://www.facebook.com/Khoilcm.vn/")
 
    .setFooter("Pick the INDEX NUMBER", config.AVATARURL)
    .setThumbnail(config.AVATARURL)
@@ -73,7 +73,7 @@ module.exports = {
     }
   }).catch(error=>{
     console.log(error)
-    return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+    return message.reply("Hết thời gian rồi, xin lỗi nha!")
 })
 })
 /**
@@ -151,7 +151,7 @@ function applysystem(){
                         }
                     }).catch(error=>{
                         console.log(error)
-                        return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                        return message.reply("Hết thời gian rồi, sorry nha!")
                     })
                     .then(something=>{
                         message.channel.send(embed.setTitle("TEXT nhúng phải là gì?").setDescription("Giống như những gì bạn muốn liệt kê trong Embed?")).then(msg =>{
@@ -209,7 +209,7 @@ function applysystem(){
                                                 ask_which_qu();
                                             }).catch(error=>{
                                                 console.log(error)
-                                                return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                                                return message.reply("Hết thời gian rồi, xin lỗi nha!")
                                             })
                                         })
                                     }
@@ -234,13 +234,13 @@ function applysystem(){
                                                 }
                                             }).catch(error=>{
                                                 console.log(error)
-                                                return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                                                return message.reply("Hết thời gian rồi, xin lỗi nha!")
                                             })
                                         })
                                     }
                                 }).catch(error=>{
                                     console.log(error)
-                                    return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+                                    return message.reply("Hết thời gian rồi, xin lỗi nha!")
                                 })
                         })
                     })
@@ -274,7 +274,7 @@ function applysystem(){
                         return message.reply(new Discord.MessageEmbed().setFooter(message.guild.name, message.guild.iconURL({dynamic:true})).setColor("GREEN").setAuthor("Đã thay đổi thành công THÔNG ĐIỆP CHẤP NHẬN!", message.author.displayAvatarURL({dynamic:true})))
                     }).catch(error=>{
                         console.log(error)
-                        return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                        return message.reply("Hết thời gian rồi, xin lỗi nha!")
                     })
                 })
             }
@@ -288,7 +288,7 @@ function applysystem(){
                         return message.reply(new Discord.MessageEmbed().setFooter(message.guild.name, message.guild.iconURL({dynamic:true})).setColor("GREEN").setAuthor("Đã thay đổi thành công THÔNG ĐIỆP TỪ CHỐI!", message.author.displayAvatarURL({dynamic:true})))
                     }).catch(error=>{
                         console.log(error)
-                        return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                        return message.reply("Hết thời gian rồi, xin lỗi nha!")
                     })
                 })
             }
@@ -366,7 +366,7 @@ function applysystem(){
                                         message.channel.send(new_embed);
                                     }).catch(error=>{
                                         console.log(error)
-                                        return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                                        return message.reply("Hết thời gian rồi, xin lỗi nha!")
                                     })
                                 })
                             }else{
@@ -376,7 +376,7 @@ function applysystem(){
 
                           })
                           .catch(e=>{
-                            return message.reply("THỜI GIAN CỦA BẠN RAN OUT !, đã bị hủy")
+                            return message.reply("Hết thời gian rồi, xin lỗi nha!, đã bị hủy")
                           })
                         })
             }
@@ -396,7 +396,7 @@ function applysystem(){
                         return message.reply("ĐÃ THAY ĐỔI THÀNH CÔNG TEMP_ROLE!")
                     }).catch(error=>{
                         console.log(error)
-                        return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                        return message.reply("Hết thời gian rồi, xin lỗi nha!")
                     })
                 })
             break;
@@ -451,7 +451,7 @@ function applysystem(){
                         message.channel.send(embed);
                     }).catch(error=>{
                         console.log(error)
-                        return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                        return message.reply("Hết thời gian rồi, xin lỗi nha!")
                     })
                 })
             }
@@ -503,7 +503,7 @@ function reactionrolesystem(){
             .setColor(config.colors.yes)
             .setTitle("ĐÂY LÀ THÔNG TIN ĐƯỢC KẾT THÚC!")
             .setDescription(`
-       **Cách thiết lập Vai trò phản ứng của Nguyễn Vinh**
+       **Cách thiết lập Vai trò phản ứng của Wibu Bot**
        > 1. Phản ứng với tin nhắn __BELOW__ ** tin nhắn này **
 
        > 2. Sau đó, sau đó một thông báo mới xuất hiện! Sau đó, bạn có thể PING role cho EMOJI đã phản ứng
@@ -522,7 +522,7 @@ function reactionrolesystem(){
        *Bạn có 30 giây cho mỗi đầu vào!*
        `)
         .setThumbnail(config.AVATARURL)
-            .setFooter("Nguyễn Vinh", config.AVATARURL)
+            .setFooter("Wibu Bot", config.AVATARURL)
             message.channel.send(rembed)
             let objet = {
               MESSAGE_ID: "",
@@ -749,7 +749,7 @@ function welcomesystem(){
       }
     }).catch(error=>{
       console.log(error)
-      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+      return message.reply("Hết thời gian rồi, xin lỗi nha!")
   })
   })
 
@@ -829,7 +829,7 @@ ${!client.setups.get(message.guild.id, "welcome.enabled") ?
               return message.reply("Đặt thành công thông báo Welcome!")
             }).catch(error=>{
               console.log(error)
-              return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+              return message.reply("Hết thời gian rồi, xin lỗi nha!")
           })
           })
         break;
@@ -882,7 +882,7 @@ ${!client.setups.get(message.guild.id, "welcome.enabled") ?
             }
             }).catch(error=>{
               console.log(error)
-              return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+              return message.reply("Hết thời gian rồi, xin lỗi nha!")
           })
         })
         break;
@@ -960,7 +960,7 @@ ${!client.setups.get(message.guild.id, "welcome.enabled") ?
                  }
                  }).catch(error=>{
                   console.log(error)
-                  return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                  return message.reply("Hết thời gian rồi, xin lỗi nha!")
               })
                })
                break;
@@ -987,7 +987,7 @@ ${!client.setups.get(message.guild.id, "welcome.enabled") ?
                       }
                   }).catch(error=>{
                       console.log(error)
-                      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                      return message.reply("Hết thời gian rồi, xin lỗi nha!")
                   })
                 })
               break;
@@ -1014,7 +1014,7 @@ ${!client.setups.get(message.guild.id, "welcome.enabled") ?
                       }
                   }).catch(error=>{
                       console.log(error)
-                      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                      return message.reply("Hết thời gian rồi, xin lỗi nha!")
                   })
                 })
               break;
@@ -1040,7 +1040,7 @@ ${!client.setups.get(message.guild.id, "welcome.enabled") ?
                       }
                   }).catch(error=>{
                       console.log(error)
-                      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                      return message.reply("Hết thời gian rồi, xin lỗi nha!")
                   })
                 })
               break;
@@ -1066,7 +1066,7 @@ ${!client.setups.get(message.guild.id, "welcome.enabled") ?
                       }
                   }).catch(error=>{
                       console.log(error)
-                      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                      return message.reply("Hết thời gian rồi, xin lỗi nha!")
                   })
                 })
               break;
@@ -1092,7 +1092,7 @@ ${!client.setups.get(message.guild.id, "welcome.enabled") ?
                       }
                   }).catch(error=>{
                       console.log(error)
-                      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                      return message.reply("Hết thời gian rồi, xin lỗi nha!")
                   })
                 })
               break;
@@ -1118,7 +1118,7 @@ ${!client.setups.get(message.guild.id, "welcome.enabled") ?
                       }
                   }).catch(error=>{
                       console.log(error)
-                      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                      return message.reply("Hết thời gian rồi, xin lỗi nha!")
                   })
                 })
               break;
@@ -1176,7 +1176,7 @@ ${!client.setups.get(message.guild.id, "welcome.enabled") ?
         }
           }).catch(error=>{
             console.log(error)
-            return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+            return message.reply("Hết thời gian rồi, xin lỗi nha!")
         })
         })
 
@@ -1221,7 +1221,7 @@ ${!client.setups.get(message.guild.id, "welcome.enabled") ?
       }
     }).catch(error=>{
       console.log(error)
-      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+      return message.reply("Hết thời gian rồi, xin lỗi nha!")
   })
   })
   }
@@ -1300,7 +1300,7 @@ ${!client.setups.get(message.guild.id, "leave.enabled") ?
               return message.reply("Đặt thành công thông báo Để lại tin nhắn!")
             }).catch(error=>{
               console.log(error)
-              return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+              return message.reply("Hết thời gian rồi, xin lỗi nha!")
           })  
           }) 
         break; 
@@ -1378,7 +1378,7 @@ ${!client.setups.get(message.guild.id, "leave.enabled") ?
                  }
                  }).catch(error=>{
                   console.log(error)
-                  return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                  return message.reply("Hết thời gian!")
               })
                })
                break;
@@ -1405,7 +1405,7 @@ ${!client.setups.get(message.guild.id, "leave.enabled") ?
                       }
                   }).catch(error=>{
                       console.log(error)
-                      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT!")
+                      return message.reply("Hết thời gian rồi, xin lỗi nha!")
                   })
                 })
               break;
@@ -1432,7 +1432,7 @@ ${!client.setups.get(message.guild.id, "leave.enabled") ?
                       }
                   }).catch(error=>{
                       console.log(error)
-                      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+                      return message.reply("Hết thời gian rồi, xin lỗi nha!")
                   })
                 })
               break;
@@ -1458,7 +1458,7 @@ ${!client.setups.get(message.guild.id, "leave.enabled") ?
                       }
                   }).catch(error=>{
                       console.log(error)
-                      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+                      return message.reply("Hết thời gian rồi, xin lỗi nha!")
                   })
                 })
               break;
@@ -1484,7 +1484,7 @@ ${!client.setups.get(message.guild.id, "leave.enabled") ?
                       }
                   }).catch(error=>{
                       console.log(error)
-                      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+                      return message.reply("Hết thời gian rồi, xin lỗi nha!")
                   })
                 })
               break;
@@ -1510,7 +1510,7 @@ ${!client.setups.get(message.guild.id, "leave.enabled") ?
                       }
                   }).catch(error=>{
                       console.log(error)
-                      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+                      return message.reply("Hết thời gian rồi, xin lỗi nha!")
                   })
                 })
               break;
@@ -1536,7 +1536,7 @@ ${!client.setups.get(message.guild.id, "leave.enabled") ?
                       }
                   }).catch(error=>{
                       console.log(error)
-                      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+                      return message.reply("Hết thời gian rồi, xin lỗi nha!")
                   })
                 })
               break;
@@ -1594,7 +1594,7 @@ ${!client.setups.get(message.guild.id, "leave.enabled") ?
         }
           }).catch(error=>{
             console.log(error)
-            return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+            return message.reply("Hết thời gian rồi, xin lỗi nha!")
         })
         })
 
@@ -1639,7 +1639,7 @@ ${!client.setups.get(message.guild.id, "leave.enabled") ?
       }
     }).catch(error=>{
       console.log(error)
-      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+      return message.reply("Hết thời gian rồi, xin lỗi nha!")
   })
   })
 
@@ -1661,16 +1661,16 @@ ${!client.setups.get(message.guild.id, "jointocreate.enabled") ?
 **3.** \`Đặt lại tất cả Tham gia để Tạo Cài đặt\` - *Đặt lại tất cả Tham gia để Tạo Cài đặt*
 
 *Bạn không cần phải tắt Tham gia để Tạo, chỉ cần xóa Kênh nếu bạn không muốn nữa*
-*Vô hiệu hóa Tham gia để tạo, có nghĩa là nó sẽ không tạo Kênh, khi some1 tham gia nó*
+*Vô hiệu hóa Tham gia để tạo, có nghĩa là nó sẽ không tạo Kênh, khi ai đó tham gia nó*
 `)
-    .setFooter("Bot made Nguyễn Vinh", config.AVATARURL)
+    .setFooter("Wibu Bot", config.AVATARURL)
     .setThumbnail(config.AVATARURL)
 
     message.reply(rembed).then(msg => {
     msg.channel.awaitMessages(m=>m.author.id===message.author.id,{max:1,time:30000,errors:['time']}).then(collected=>{
       switch(collected.first().content.toString()){
         case "1":
-          message.guild.channels.create("-THAM GIA ĐỂ TẠO-", {
+          message.guild.channels.create(" Tạo-Phòng-Riêng", {
             type: 'category',
             permissionOverwrites: [
               {
@@ -1680,7 +1680,7 @@ ${!client.setups.get(message.guild.id, "jointocreate.enabled") ?
             ],
           })
           .then((channel) => {
-             message.guild.channels.create(`Tạo phòng`, {
+             message.guild.channels.create(`Tạo Phòng Riêng`, {
               type: 'voice',
               parent: channel.id, //ADMINISTRATOR
               permissionOverwrites: [
@@ -1698,7 +1698,7 @@ ${!client.setups.get(message.guild.id, "jointocreate.enabled") ?
                     .setColor(config.colors.yes)
                     .setTitle("Tham Gia Tạo Thiết Lập Của Bạn Đã Thành Công!")
                     .setDescription(`Bây giờ bạn có thể kết nối với: \`${channel.name}\`\n\nNếu bạn muốn một kênh khác, thì chỉ cần tạo một kênh khác.\nNếu bạn không muốn nữa, thì chỉ cần xóa kênh!`)
-                    .setFooter("Bot made Nguyễn Vinh", config.AVATARURL)
+                    .setFooter("Wibu Bot", config.AVATARURL)
                     .setThumbnail(config.AVATARURL)
               message.reply(themebd)
             })
@@ -1732,7 +1732,7 @@ ${!client.setups.get(message.guild.id, "jointocreate.enabled") ?
       }
     }).catch(error=>{
       console.log(error)
-      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+      return message.reply("Hết thời gian rồi, xin lỗi nha!")
   })
   })
 }
@@ -1817,7 +1817,7 @@ ${!client.setups.get(message.guild.id, "logger.enabled") ?
       }
     }).catch(error=>{
       console.log(error)
-      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+      return message.reply("Hết thời gian rồi, xin lỗi nha!")
   })
   })
 }
@@ -1901,7 +1901,7 @@ ${!client.setups.get(message.guild.id, "aichatsystem.enabled") ?
       }
     }).catch(error=>{
       console.log(error)
-      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+      return message.reply("Hết thời gian rồi, xin lỗi nha!")
   })
   })
 }
@@ -1995,7 +1995,7 @@ ${!client.setups.get(message.guild.id, "counter.enabled") ?
       }
     }).catch(error=>{
       console.log(error)
-      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+      return message.reply("Hết thời gian rồi, xin lỗi nha!")
   })
   })
 }
@@ -2107,7 +2107,7 @@ ${!client.setups.get(message.guild.id, "counter.enabled") ?
       }
       }).catch(error=>{
         console.log(error)
-        return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+        return message.reply("Hết thời gian rồi, xin lỗi nha!")
     })
     })
         break;
@@ -2126,7 +2126,7 @@ ${!client.setups.get(message.guild.id, "counter.enabled") ?
       }
     }).catch(error=>{
       console.log(error)
-      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+      return message.reply("Hết thời gian rồi, xin lỗi nha!")
   })
   })
 }
@@ -2221,7 +2221,7 @@ function ticketsystem(){
           })
         }).catch(error=>{
           console.log(error)
-          return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+          return message.reply("Hết thời gian rồi, xin lỗi nha!")
       })
       });
             break;
@@ -2258,7 +2258,7 @@ function ticketsystem(){
                 client.setups.set(message.guild.id, collected.first().content, "ticketsystem.message");
               }).catch(error=>{
                 console.log(error)
-                return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+                return message.reply("Hết thời gian rồi, xin lỗi nha!")
             })
             })
           break;
@@ -2306,7 +2306,7 @@ function ticketsystem(){
                        console.log(client.setups.get(message.guild.id, "ticketsystem"));
                      }).catch(error=>{
                       console.log(error)
-                      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+                      return message.reply("Hết thời gian rồi, xin lỗi nha!")
                   })
                    })
             break;
@@ -2329,7 +2329,7 @@ function ticketsystem(){
         }
       }).catch(error=>{
         console.log(error)
-        return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+        return message.reply("Hết thời gian rồi, xin lỗi nha!")
     })
   })
 }
@@ -2441,7 +2441,7 @@ ${!client.setups.get(message.guild.id, "ranking.enabled") ?
       }
     }).catch(error=>{
       console.log(error)
-      return message.reply("XIN LỖI NHƯNG THỜI GIAN CỦA BẠN RAN HẾT")
+      return message.reply("Hết thời gian rồi, xin lỗi nha!")
   })
 
 })
