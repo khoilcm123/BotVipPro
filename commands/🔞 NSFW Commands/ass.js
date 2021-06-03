@@ -6,7 +6,7 @@ const config = require("../../config.json")
 module.exports = {
     name: "ass",
     category: "🔞 NSFW Commands",
-  description: "Gửi ass tự hiểu :))",
+  description: "Gửi ass !",
   usage: "ass",
   run: async (client, message, args, level) => {
 
