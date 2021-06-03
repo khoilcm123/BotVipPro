@@ -9,7 +9,7 @@ module.exports = (client) => {
         console.log(`${client.user.tag} đã sẵn sàng hoạt động`);
         setInterval(() => {
            stateswitch = !stateswitch; //thay đổi trạng thái
-           if (stateswitch) client.user.setActivity(`${config.prefix}help, hhelp để xem chi tiết các lệnh`, { type: "PLAYING" });
+           if (stateswitch) client.user.setActivity(`${config.prefix}Playing Wibu Impact`, { type: "PLAYING" });
            else client.user.setActivity(`${client.guilds.cache.reduce((c, g) => c + g.memberCount, 0)} Thành viên 😂 | ${client.guilds.cache.size} Server 🤭`, { type: "PLAYING" }); 
 
         }, 5000); 
