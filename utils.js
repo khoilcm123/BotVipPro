@@ -25,8 +25,8 @@ exports.formatNumber = (number) => {
 
 const randomFooter = () => {
     return exports.randomSelection([
-        'Bot made in Nguyễn Vinh',
-        'Bot made in Nguyễn Vinh',
+        'Wibu Bot',
+        'Wibu Bot',
     ]);
 };
 
