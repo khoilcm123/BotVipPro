@@ -153,11 +153,11 @@ client.on("message", async message => {
                 command.run(client, message, args, prefix);
             }catch (error){
                 console.log(error.toString().red)
-                functions.embedbuilder(client,5000, message, "RED", "ERROR: ", "```" + error.toString().substr(0, 100) + "```" + "\n\n**Lỗi đã được gửi cho chủ sở hữu của tôi!**")
+                functions.embedbuilder(client,5000, message, "RED", "ERROR: ", "```" + error.toString().substr(0, 100) + "```" + "\n\n**Lỗi đã được gửi cho Khôi!**")
                 functions.errorbuilder(error.stack.toString().substr(0, 2000))
             }
         }
     else
-        return message.reply(`\` Ồ bạn nhập sai lệnh rồi hãy nhấn | ${prefix}help | để xem danh sách lệnh\``)
+        return message.reply(`\` Ôi bạn ơi, bạn nhập sai lệnh rồi hãy nhấn | ${prefix}help | để xem danh sách lệnh\``)
 });
 client.login(config.token);
