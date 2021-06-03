@@ -8,7 +8,7 @@ module.exports = {
   description: "\`Cảnh báo bất kỳ ai không tuân theo các quy tắc\`",
   run: async (client, message, args) => {
     
-    if(!message.member.hasPermission("ADMINITRASTOR")) {
+    if(!message.member.hasPermission("ADMINITRASTORS")) {
       return message.channel.send("Bạn nên có quyền quản lí để xài nha!")
     }
     
