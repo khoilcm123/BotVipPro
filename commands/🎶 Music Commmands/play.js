@@ -27,7 +27,7 @@ module.exports = {
                   if(!isdj && !message.member.hasPermission("ADMINISTRATOR")) return functions.embedbuilder(client, 6000, message, config.colors.no, "DJ-ROLE", `Bạn không có quyền cho Lệnh này! Bạn cần phải có: ${leftb}`)
               }
               //CHECK IF DJ LOL
-      if (!message.member.voice.channel) return functions.embedbuilder(client, 5000, message, config.colors.no, "`" + message.author.tag + "`"  + "❌ \` Bạn cần phải vào một channel voice nào đó\`")
+      if (!message.member.voice.channel) return functions.embedbuilder(client, 5000, message, config.colors.no, "`" + message.author.tag + "`"  + " Bạn cần phải vào một channel voice nào đó")
       if(!args[0]) return functions.embedbuilder(client, 5000, message, config.colors.no, "`" + message.author.tag + "`"  + "\`Vui lòng thêm một cái gì đó mà bạn muốn tìm kiếm\`")
       if (client.distube.isPlaying(message) && message.member.voice.channel.id !== message.member.guild.me.voice.channel.id) return functions.embedbuilder(client, 5000, message, config.colors.no, "`" + message.author.tag + "`"  + "  Bạn phải tham gia Kênh voice của tôi: " + ` \`${message.member.guild.me.voice.channel.name ? message.member.guild.me.voice.channel.name : ""}\``)
       functions.embedbuilder(client, 5000, message, config.colors.yes, "🧐 \`Đang tìm kiếm\`", "```" + args.join(" ") + "```")
@@ -42,7 +42,7 @@ module.exports = {
           let tracklength = items.length;
          /* if(tracklength > 25) 
           {
-              message.reply("\`tối đa các bản nhạc hiện tại cho danh sách phát deezer là 25 bản nhạc, nếu bạn muốn sử dụng danh sách phát lớn hơn, thì dm `VinhBot#3466`\n\nTôi sẽ sử dụng 25 bài hát đầu tiên!\`"); 
+              message.reply("\`tối đa các bản nhạc hiện tại cho danh sách phát deezer là 25 bản nhạc, nếu bạn muốn sử dụng danh sách phát lớn hơn, mình sẽ sử dụng 25 bài hát đầu tiên!\`"); 
               tracklength = 25;
           } */
           functions.embedbuilder(client, 5000, message, config.colors.yes, "<:youtube:769675858431705109> Tìm nạp các bài hát!", "Điều này sẽ đưa tôi đi khắp nơi: " + tracklength/2 + " giây");
@@ -65,7 +65,7 @@ module.exports = {
         let tracklength = items.length;
         if(tracklength > 25) 
         {
-            message.reply("❌\`tối đa các bản nhạc hiện tại cho danh sách phát deezer là 25 bản nhạc, nếu bạn muốn sử dụng danh sách phát lớn hơn, thì dm `VinhBot66`\n\ nTôi sẽ sử dụng 25 bài hát đầu tiên!\`"); 
+            message.reply("❌\`tối đa các bản nhạc hiện tại cho danh sách phát deezer là 25 bản nhạc, nếu bạn muốn sử dụng danh sách phát lớn hơn, thì mình sẽ sử dụng 25 bài hát đầu tiên!\`"); 
             tracklength = 25;
         }
         functions.embedbuilder(client, 5000, message, config.colors.yes, "Tìm nạp các bài hát!", "Điều này sẽ đưa tôi đi khắp nơi: " + tracklength/2 + " giây");
