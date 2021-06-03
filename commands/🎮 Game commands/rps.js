@@ -2,7 +2,7 @@ const discord = require('discord.js')
 module.exports = {
 	name: "rps",
         category:"🎮 Game commands",
-	description: "\`Chơi oẳn tù tì cùng với BOT\`",
+	description: "\`Chơi oẳn tù tì cùng với em\`",
 	run: async(client, message, args) => {
 		let embed = new discord.MessageEmbed()
 		.setTitle("RPS GAME")
@@ -23,7 +23,7 @@ module.exports = {
         	async(collected) => {
         		const reaction = collected.first()
         		let result = new discord.MessageEmbed()
-        		.setTitle("🇻🇳 BẮT ĐẦU 🇻🇳")
+        		.setTitle(" ------ ")
         		.addField("lựa chọn của bạn", `${reaction.emoji.name}`)
         		.addField("Lựa chọn của tôi", `${me}`)
 			await msg.edit(result)
@@ -32,13 +32,13 @@ module.exports = {
                 (me === "✂" && reaction.emoji.name === "☘️")) {
                     message.reply("Bạn đã thua!");
             } else if (me === reaction.emoji.name) {
-                return message.reply("Hoà nhé pro!");
+                return message.reply("Hoà nhé bạn");
             } else {
                 return message.reply("Bạn đã thắng!");
             }
         })
         .catch(collected => {
-                message.reply('Quy trình đã bị hủy vì bạn không trả lời kịp thời!');
+                message.reply('Trả lời chậm thì thua nha');
             })
 }
 }
