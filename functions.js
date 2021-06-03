@@ -105,7 +105,7 @@ module.exports = {
             return embeds;
         } catch (error) {
             console.log(error.stack.toString().red)
-            functions.embedbuilder(client, 5000, message, "RED", "ERROR: ", "```" + error.toString().substr(0, 100) + "```" + "\n\n**Đã gửi lỗi cho chủ sở hữu của tôi!**")
+            functions.embedbuilder(client, 5000, message, "RED", "ERROR: ", "```" + error.toString().substr(0, 100) + "```" + "\n\n**Đã gửi lỗi cho Khôi!**")
             functions.errorbuilder(error.stack.toString().substr(0, 2000))
         }
     },
@@ -127,7 +127,7 @@ module.exports = {
             return embeds;
         } catch (error) {
             console.log(error.stack.toString().red)
-            functions.embedbuilder(client, 5000, message, "RED", "ERROR: ", "```" + error.toString().substr(0, 100) + "```" + "\n\n**Đã gửi lỗi cho chủ sở hữu của tôi**")
+            functions.embedbuilder(client, 5000, message, "RED", "ERROR: ", "```" + error.toString().substr(0, 100) + "```" + "\n\n**Đã gửi lỗi cho Khôi**")
             functions.errorbuilder(error.stack.toString().substr(0, 2000))
         }
     },
@@ -143,7 +143,7 @@ module.exports = {
             let embed1 = new Discord.MessageEmbed()
     
             .setColor(config.colors.yes)
-            .setTitle("🇻🇳 VINH ĐẸP TRAI BỐ ĐỜI THẾ 🇻🇳")
+            .setTitle("🇻🇳 -- 🇻🇳")
             .setDescription(`Bắt đầu hátttt: [\`${song.name}\`](${song.url})`)
             .addField("💡 Yêu cầu bởi:", `>>> ${song.user}`, true)
             .addField("⏱ Thời gian:", `>>> \`${queue.formattedCurrentTime} / ${song.formattedDuration}\``, true)
