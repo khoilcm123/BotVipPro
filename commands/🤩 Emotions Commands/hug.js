@@ -6,7 +6,7 @@ const config = require("../../config.json")
 module.exports = {
   name: "hug",
   category: "🤩 Emotions Commands",
-  description: "\`ôm một người dùng được đề cập\`",
+  description: "Ôm nè",
   usage: "hug [@User]",
   run: async (client, message, args) => {
 
