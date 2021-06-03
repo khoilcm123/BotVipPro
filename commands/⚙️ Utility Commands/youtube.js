@@ -16,7 +16,7 @@ module.exports = {
     const videoName = args.join(' ');
     const banned = ["porn", "sex", "fucking", "moaning", "blowjob", "tits", "dick", "sucking", "nigga", "nigger", "pussy", "cock", "boobs", "xvideos", "xnxx", "clits", "naked", "hentai", "horny", "faping", "masturbating", "masturbation", "fuck", "stript", "naked"]  
 
-    if (!videoName) return this.sendErrorMessage("🌚\`Mày phải ghi tên video YouTube ra để tao còn biết mà tìm chứ ?\`");
+    if (!videoName) return this.sendErrorMessage("Bạn phải ghi tên video YouTube ra để còn biết mà tìm chứ ?");
 
     const searchOptions = { maxResults: 1, key: apiKey, type: 'video' };
 
@@ -39,7 +39,7 @@ module.exports = {
     .setURL(result.link)
     .setThumbnail('https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-512.png')
     .setDescription(result.description)
-    .setFooter(`Bot made in Nguyễn vinh | yêu cầu bởi: ${message.member.displayName}`, message.author.displayAvatarURL({ dynamic: true }))
+    .setFooter(`Wibu Bot | yêu cầu bởi: ${message.member.displayName}`, message.author.displayAvatarURL({ dynamic: true }))
     .setImage(result.thumbnails.high.url)
     .setTimestamp()
     .setColor(message.guild.me.displayHexColor)
