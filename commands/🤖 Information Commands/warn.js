@@ -8,26 +8,26 @@ module.exports = {
   description: "\`Cảnh báo bất kỳ ai không tuân theo các quy tắc\`",
   run: async (client, message, args) => {
     
-    if(!message.member.hasPermission("ADMINISTRATOR")) {
-      return message.channel.send("❌\`Bạn nên có quyền quản trị để sử dụng lệnh này!\`")
+    if(!message.member.hasPermission("Manage Channels")) {
+      return message.channel.send("Bạn nên có quyền quản lí để xài nha!")
     }
     
     const user = message.mentions.members.first()
     
     if(!user) {
-      return message.channel.send("❌\`Vui lòng đề cập đến người mà bạn muốn cảnh báo - < prefix > @mention [ lý do ] \`")
+      return message.channel.send("Vui lòng đề cập đến người mà bạn muốn cảnh báo - < prefix > @mention [ lý do ] \`")
     }
     
     if(message.mentions.users.first().bot) {
-      return message.channel.send("❌\`Mày không thể cảnh báo BOT được\`")
+      return message.channel.send("Ơ đây là bot mà")
     }
     
     if(message.author.id === user.id) {
-      return message.channel.send("❌\`Bạn không thể cảnh báo chính mình\`")
+      return message.channel.send("Bạn không thể cảnh báo chính mình!")
     }
     
     if(user.id === message.guild.owner.id) {
-      return message.channel.send("Đồ ngu, làm sao bạn có thể cảnh báo chủ sở hữu server -_-")
+      return message.channel.send("Người ta là chủ server đó bạn!")
     }
     
     const reason = args.slice(1).join(" ")
