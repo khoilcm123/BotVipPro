@@ -17,7 +17,7 @@ module.exports = {
 		args.shift();
 
 		if(member.roles.highest.position>=message.member.roles.highest.position){
-			return message.reply(":x: \`Tôi không thể tắt tiếng Thành viên này, vì anh ta cao hơn / Bằng vị trí role của bạn\`")
+			return message.reply(":x: \`Tôi không thể tắt tiếng Thành viên này, vì bạn ấy cao hơn / Bằng vị trí role của bạn\`")
 		}
 
 		if(!message.guild.me.hasPermission("MANAGE_ROLES")) return message.reply("❌ \`Tôi cần quyền để Quản lý role hay còn gọi là cung cấp role\`");
@@ -43,7 +43,7 @@ module.exports = {
 			console.log(Number(highestrolepos)-1)
 			mutedrole = await message.guild.roles.create({
 					data: {
-						name: 'khoá mõm',
+						name: 'mute',
 						color: '#222222',
 						hoist: false, 
 						position: Number(highestrolepos) - 1,
@@ -83,10 +83,10 @@ module.exports = {
 		.setTitle(`Khoá mõm: \`${member.user.tag}\``)
 		.setThumbnail(member.user.displayAvatarURL({dynamic:true}))
 		.setFooter(`Yêu cầu bởi: ${message.author.tag}`, message.author.displayAvatarURL({dynamic:true}))
-		.setDescription(`Thanh niên bị khoá mõm trong: \`${ms(mutetime, { long: true })}\`${reason ? `\n\n**Lý Do**\n> ${reason.substr(0 , 1800)}`: "\nNO REASON"}`)
+		.setDescription(`Bạn này bị mute trong: \`${ms(mutetime, { long: true })}\`${reason ? `\n\n**Lý Do**\n> ${reason.substr(0 , 1800)}`: "\nNO REASON"}`)
 		message.channel.send(embed).catch(e=>console.log(e))
 		
-		member.send(embed.setTitle(`Bị khoá mõm bởi: \`${message.author.tag}\``)).catch(e=>console.log(e))
+		member.send(embed.setTitle(`Bị mute bởi: \`${message.author.tag}\``)).catch(e=>console.log(e))
 		
 		setTimeout(()=>{
 			try{
