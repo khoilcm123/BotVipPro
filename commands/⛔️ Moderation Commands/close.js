@@ -61,7 +61,7 @@ module.exports = {
 
           let embed = new discord.MessageEmbed()
           .setColor(config.colors.yes)
-          .setFooter("Bot made in Nguyễn Vinh", config.AVATARURL)
+          .setFooter("Wibu Bot", config.AVATARURL)
           .setThumbnail(config.AVATARURL)
           .setTitle("Đã tạo và gửi bản ghi!")
           .setDescription(`✅ Vé ( Ticket ) sẽ bị xóa sau 5 giây!`)
