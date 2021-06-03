@@ -12,7 +12,7 @@ module.exports = {
         if (!isNaN(args[0]) || parseInt(args[0]) < 0) {
               let embed = new Discord.MessageEmbed()
             .setColor(config.colors.yes).setFooter(client.user.username, config.AVATARURL)
-                .setDescription(`✅ Chế độ làm chậm được đặt thành công cho ${args[0]}!`)
+                .setDescription(` Chế độ làm chậm được đặt thành công cho ${args[0]}!`)
                 
             message.reply(embed)
             message.channel.setRateLimitPerUser(args[0])
