@@ -17,7 +17,7 @@ module.exports = {
               let isdj=false;
               let leftb = "";
                   if(client.settings.get(message.guild.id, `djroles`).join("") === "") 
-                      leftb = "\`không có Kênh, hay còn gọi là tất cả các Kênh đều là Kênh Bot\`"
+                      leftb = "\`Không tìm được kênh bạn ơi!\`"
                   else
                       for(let i = 0; i < client.settings.get(message.guild.id, `djroles`).length; i++){
                               if(message.member.roles.cache.has(client.settings.get(message.guild.id, `djroles`)[i])) isdj = true;
@@ -81,4 +81,4 @@ module.exports = {
     }
   };
 
-// Vinh đẹp trai bố đời thế
+// Khôi Cute's Bot
