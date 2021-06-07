@@ -158,6 +158,6 @@ client.on("message", async message => {
             }
         }
     else
-        return message.reply(' Ôi bạn ơi, bạn nhập sai lệnh rồi hãy nhấn | ${prefix}help | để xem danh sách lệnh ')
+        return message.reply('Ôi bạn ơi, bạn nhập sai lệnh rồi hãy nhấn | ${prefix}help | để xem danh sách lệnh ')
 });
 client.login(config.token);
