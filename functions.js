@@ -143,7 +143,7 @@ module.exports = {
             let embed1 = new Discord.MessageEmbed()
     
             .setColor(config.colors.yes)
-            .setTitle("🇻🇳 -- 🇻🇳")
+            .setTitle("-----------------------------------")
             .setDescription(`Bắt đầu hátttt: [\`${song.name}\`](${song.url})`)
             .addField("💡 Yêu cầu bởi:", `>>> ${song.user}`, true)
             .addField("⏱ Thời gian:", `>>> \`${queue.formattedCurrentTime} / ${song.formattedDuration}\``, true)
