@@ -36,7 +36,7 @@ client.on('ready', () => {
 	let inviteembed = new Discord.MessageEmbed()
 	.setColor(config.colors.yes)
 	.setTitle("Invite me now!")
-	.setDescription(`[Mời Bot vào server](https://discord.com/api/oauth2/authorize?client_id=842012619320983573&permissions=0&scope=bot%20applications.commands)
+	.setDescription(`[Mời Bot vào server](https://discord.com/api/oauth2/authorize?client_id=824484909002260511&permissions=0&scope=bot)
         
         [DISCORD SERVER](https://discord.gg/HGd5uJ7eV8)
            |   [FACEBOOK](https://www.facebook.com/profile.php?id=100063748987527)   |   🇻🇳 Cảm ơn vì đã mời!`)
@@ -101,10 +101,10 @@ client.on('ready', () => {
             \u200b
             `)
                 .addField("***Thông tin OWNER:***", `
-            >>> <@788208207465938954> \`VinhBot#3466\` [FACEBOOK](https://www.facebook.com/profile.php?id=100063748987527)
+            >>> <@420506395046182912> [FACEBOOK](https://www.facebook.com/Khoilcm.vn/)
             `)
                 .addField("***ỦNG HỘ:***", `
-            >>> [DISCORD](https://discord.gg/HGd5uJ7eV8) | [MỜI BOT](https://discord.com/api/oauth2/authorize?client_id=842012619320983573&permissions=0&scope=bot%20applications.commands/)
+            >>> [DISCORD](https://discord.gg/7Nwwffs5pK) | [MỜI BOT](https://discord.com/api/oauth2/authorize?client_id=824484909002260511&permissions=0&scope=bot)
             `)
             const helpembed = new Discord.MessageEmbed()
             .setColor(config.colors.yes)
@@ -131,7 +131,7 @@ client.on('ready', () => {
                 `)
                 .addField("\u200b","\u200b")
                 .addField("**__Thông tin OWMER:__**", `
-                >>> <@788208207465938954> \`Vinhbot#3466\` [FACEBOOK](https://www.facebook.com/profile.php?id=100063748987527) | [MỜI BOT](https://discord.com/api/oauth2/authorize?client_id=842012619320983573&permissions=0&scope=bot%20applications.commands)
+                >>> <@420506395046182912>  [FACEBOOK](https://www.facebook.com/Khoilcm.vn/) | [MỜI BOT](https://discord.com/api/oauth2/authorize?client_id=824484909002260511&permissions=0&scope=bot)
                 `)
              
             .setFooter(`Để xem mô tả lệnh và kiểu sử dụng ${prefix}help [CMD Name]`, client.user.displayAvatarURL())
