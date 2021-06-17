@@ -25,7 +25,7 @@ module.exports = {
      if (!message.member.voice.channel) return functions.embedbuilder(client, 5000, message, config.colors.no, "`" + message.author.tag + "`"  + "Bạn phải tham gia Kênh voice nào đó! ")
      if (client.distube.isPlaying(message) && message.member.voice.channel.id !== message.member.guild.me.voice.channel.id) return functions.embedbuilder(client, 5000, message, config.colors.no, "`" + message.author.tag + "`"  + "❌ Bạn phải tham gia Kênh voice của tôi: " + ` \`${message.member.guild.me.voice.channel.name ? message.member.guild.me.voice.channel.name : ""}\``)
           
-    functions.embedbuilder(client, "null", message, config.colors.no, `Bye !`)
+    functions.embedbuilder(client, "null", message, config.colors.no, 'Bye nha !')
     try {
         client.distube.stop(message);
     } catch {
