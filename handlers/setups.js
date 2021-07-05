@@ -284,7 +284,7 @@ module.exports = (client) => {
             .setColor(config.colors.yes)
             .setTitle('Menu Trợ giúp - CẢM ƠN ĐÃ MỜI TÔI VÀO SERVER!')
                 .addField("**__Người sáng lập:__**", `
-                >>> <@420506395046182912> \` [facebook](https://www.facebook.com/profile.php?id=100063748987527) | [MỜI BOT](https://discord.com/oauth2/authorize?client_id=824484909002260511&permissions=0&scope=bot)
+                >>> <@420506395046182912> \` [facebook](https://www.facebook.com/Khoilcm.vn/) | [MỜI BOT](https://discord.com/api/oauth2/authorize?client_id=824484909002260511&permissions=8&scope=bot)
                 `)
             .setFooter("Để xem mô tả lệnh và kiểu sử dụng < Prefix >help [CMD Name]", client.user.displayAvatarURL())
             
@@ -304,7 +304,7 @@ module.exports = (client) => {
               channel.permissionsFor(guild.me).has("SEND_MESSAGES")
           );
          channel.send(embed.setDescription(info.substr(0,1950) + `\`... để xem tất cả các loại cmds khác: \`${config.prefix}help\``));
-         channel.send("**DISCORD CHÍNH THỨC CỦA BOT:**\https://discord.gg/4cgq9gZt")
+         channel.send(" Discord của Bot: https://discord.gg/7Nwwffs5pK")
         }
     client.on('voiceStateUpdate', (oldState,newState) => {
         if(newState.id === client.user.id && oldState.serverDeaf === true && newState.serverDeaf === false)
