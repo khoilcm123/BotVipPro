@@ -105,7 +105,7 @@ module.exports = {
     `)
     
     .addField("***Bot Wibu***", `
-    >>> [DISCORD](https://discord.gg/q4PRr6wS) || [MỜI BOT](https://discord.com/api/oauth2/authorize?client_id=824484909002260511&permissions=8&scope=bot)
+    >>> [DISCORD](https://discord.gg/7Nwwffs5pK) || [MỜI BOT](https://discord.com/api/oauth2/authorize?client_id=824484909002260511&permissions=8&scope=bot)
     `).setFooter(client.user.username, config.AVATARURL)
     message.channel.send(embed)
   }
