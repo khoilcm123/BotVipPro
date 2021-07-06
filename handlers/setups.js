@@ -286,7 +286,7 @@ module.exports = (client) => {
                 .addField("**__Người sáng lập:__**", `
                 >>> <@420506395046182912> \` [facebook](https://www.facebook.com/Khoilcm.vn/) | [MỜI BOT](https://discord.com/api/oauth2/authorize?client_id=824484909002260511&permissions=8&scope=bot)
                 `)
-            .setFooter("Để xem mô tả lệnh và kiểu sử dụng < Prefix >help [CMD Name]", client.user.displayAvatarURL())
+            .setFooter("[CMD Name]", client.user.displayAvatarURL())
             
             const commands = (category) => {
                 return client.commands
@@ -303,7 +303,7 @@ module.exports = (client) => {
               channel.type === "text" &&
               channel.permissionsFor(guild.me).has("SEND_MESSAGES")
           );
-         channel.send(embed.setDescription(info.substr(0,1950) + `\`... để xem tất cả các loại cmds khác: \`${config.prefix}help\``));
+         channel.send(embed.setDescription(info.substr(0,1950)));
          channel.send(" Discord của Bot: https://discord.gg/7Nwwffs5pK")
         }
     client.on('voiceStateUpdate', (oldState,newState) => {
