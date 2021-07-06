@@ -36,10 +36,10 @@ client.on('ready', () => {
 	let inviteembed = new Discord.MessageEmbed()
 	.setColor(config.colors.yes)
 	.setTitle("Invite me now!")
-	.setDescription(`[Mời Bot vào server](https://discord.com/api/oauth2/authorize?client_id=824484909002260511&permissions=0&scope=bot)
+	.setDescription(`[Mời Bot vào server](https://discord.com/api/oauth2/authorize?client_id=824484909002260511&permissions=8&scope=bot)
         
-        [DISCORD SERVER](https://discord.gg/HGd5uJ7eV8)
-           |   [FACEBOOK](https://www.facebook.com/profile.php?id=100063748987527)   |   🇻🇳 Cảm ơn vì đã mời!`)
+        [DISCORD SERVER](https://discord.gg/7Nwwffs5pK)
+           |   [FACEBOOK](https://www.facebook.com/Khoilcm.vn/)   |   🇻🇳 Cảm ơn vì đã mời!`)
 	.setFooter(client.user.username + " | Syntax:  <>...must    []...optional", client.user.displayAvatarURL())
 	.setAuthor(interaction.member.user.username,  client.user.displayAvatarURL(), "hế hế")
 	let totalMembers = client.guilds.cache.reduce((c, g) => c + g.memberCount, 0);
@@ -51,7 +51,7 @@ client.on('ready', () => {
             const infoembed = new Discord.MessageEmbed()
                 .setAuthor(
                     `Thông tin về: ${client.user.username} Bot`,
-                    client.user.displayAvatarURL(), "https://discord.com/api/oauth2/authorize?client_id=842012619320983573&permissions=0&scope=bot%20applications.commands"
+                    client.user.displayAvatarURL(), "https://discord.com/api/oauth2/authorize?client_id=824484909002260511&permissions=8&scope=bot"
                 )
                 .setColor(config.colors.yes)
                 .addFields(
