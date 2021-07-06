@@ -93,7 +93,7 @@ client.on('ready', () => {
                     },
                     {
                         name: 'Chủ sở hữu và Nhà phát triển',
-                        value: `\`VinhBot#3466\` <@788208207465938954>`,
+                        value: ` <@420506395046182912>`,
                         inline: true,
                     },
                 )
