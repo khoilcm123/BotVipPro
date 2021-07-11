@@ -85,7 +85,7 @@ client.on("message", async message => {
     if (prefix === null) prefix = config.prefix;           //nếu không có tiền tố, hãy đặt nó thành tiền tố chuẩn trong tệp config.json
 
     if (!message.content.startsWith(prefix) && message.content.includes(client.user.id))
-        message.reply(new Discord.MessageEmbed().setColor(config.colors.yes).setAuthor(`${message.author.username} | Prefix của tôi là ${prefix} | để bắt đầu ${prefix}help để xem danh sách lệnh`, message.author.displayAvatarURL({ dynamic: true }), "https://discord.com/api/oauth2/authorize?client_id=798583657592782868&permissions=8&scope=bot%20applications.commands"));
+        message.reply(new Discord.MessageEmbed().setColor(config.colors.yes).setAuthor(`${message.author.username} | gì dạ, sao tag mình `, message.author.displayAvatarURL({ dynamic: true }), "https://discord.com/api/oauth2/authorize?client_id=798583657592782868&permissions=8&scope=bot%20applications.commands"));
     if(!message.content.startsWith(prefix)) return;
     
     const { inspect } = require('util');
