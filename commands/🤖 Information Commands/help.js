@@ -3,7 +3,7 @@ const { readdirSync } = require("fs");
 const prefix = require("../../config.json").prefix;
 
 module.exports = {
-  name: "help",
+  name: "helpme",
   aliases : ['h', 'cứu', 'cuu'],
   usage:"( !h < Tên lệnh vd : !help avatar > )",
   description: "\`Hiển thị các lệnh bot hiện đang có\`",
