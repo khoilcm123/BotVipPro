@@ -12,18 +12,18 @@ module.exports = {
         if (message.deletable) message.delete();
 
         // No args
-        if (!args[0]) return message.reply("Phải tag tên người bạn muốn cho cút chứ!").then(m => m.delete({ timeout: 5000 }));
+        if (!args[0]) return message.reply("Phải tag tên người bạn muốn hiến tế chứ!").then(m => m.delete({ timeout: 5000 }));
         const reason = args.slice(1).join(' ') || "\`Không có\`";
 
         // No author permissions
         if (!message.member.hasPermission("BAN_MEMBERS")) {
-            return message.reply("Ôi bạn ơi, bạn làm gì có quyền ban người ta")
+            return message.reply("Ôi bạn ơi, bạn làm gì có quyền hiến tế người ta")
                 .then(m => m.delete({ timeout: 5000 }));
 
         }
         // No bot permissions
         if (!message.guild.me.hasPermission("BAN_MEMBERS")) {
-            return message.reply("Mình không có quyền ban bạn ơi")
+            return message.reply("Mình không có quyền hiến tế bạn ơi")
                 .then(m => m.delete({ timeout: 5000 }));
         }
 
@@ -81,7 +81,7 @@ module.exports = {
                         toBan.ban({ reason: reason });
                         logChannel.send(embed);
                     }
-                    else return message.channel.send(`\`Bị lỗi khi ban: ${err.message}\``);
+                    else return message.channel.send(`\`Bị lỗi khi hiến tế: ${err.message}\``);
                 };
             } else if (emoji === "❌") {
                 msg.delete();
