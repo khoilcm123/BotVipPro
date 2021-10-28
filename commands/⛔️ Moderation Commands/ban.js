@@ -53,8 +53,8 @@ module.exports = {
             .setFooter(message.member.displayName, message.author.displayAvatarURL())
             .setTimestamp()
             .addField(' ---- Thực thi ----', [
-                `**- Đã hiến tế tuổi trẻ:** ${toBan} (${toBan.id})`,
-                `**- Người đá:** ${message.member} (${message.member.id})`,
+                `**- Đã hiến tế bạn:** ${toBan} (${toBan.id})`,
+                `**- Người hiến tế:** ${message.member} (${message.member.id})`,
                 `**- Lý do:** ${reason}`,
             ]);
 
