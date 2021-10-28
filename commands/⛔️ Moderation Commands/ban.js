@@ -85,7 +85,7 @@ module.exports = {
                 };
             } else if (emoji === "❌") {
                 msg.delete();
-                message.reply(`\`Mọi thứ đã xong !\``)
+                message.reply(`\`Đã hiến tế !\``)
                     .then(m => m.delete({ timeout: 10000 }));
             }
         });
