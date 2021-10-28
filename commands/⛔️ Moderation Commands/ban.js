@@ -2,7 +2,7 @@ const { MessageEmbed } = require("discord.js");
 const { promptMessage } = require('../../modules/utils');
 const { getMember } = require('../../modules/utils');
 module.exports = {
-    name: "ban",
+    name: "hiente",
     category: "",
     aliases:['bn', 'cấm', 'ra đảo', 'biến', 'cút', 'out'],
     description: "ban 1 thằng ất ơ, ngáo đá, toxic nào đấy khỏi server!",
@@ -37,7 +37,7 @@ module.exports = {
 
         // Can't ban urself
         if (toBan.id === message.author.id) {
-            return message.reply("Ban chính mình sao dc ! Khác gì tự ** ** đâu")
+            return message.reply("Hiến tế chính mình sao dc ! Khác gì tự ** ** đâu")
                 .then(m => m.delete({ timeout: 5000 }));
         }
 
@@ -53,26 +53,26 @@ module.exports = {
             .setFooter(message.member.displayName, message.author.displayAvatarURL())
             .setTimestamp()
             .addField(' ---- Thực thi ----', [
-                `**- Đã đá tuổi trẻ:** ${toBan} (${toBan.id})`,
+                `**- Đã hiến tế tuổi trẻ:** ${toBan} (${toBan.id})`,
                 `**- Người đá:** ${message.member} (${message.member.id})`,
                 `**- Lý do:** ${reason}`,
             ]);
 
         const promptEmbed = new MessageEmbed()
             .setColor("RANDOM")
-            .setAuthor(`\`Hãy trả lời trong 60s\``)
-            .setDescription(`Bạn có muốn ban ${toBan}?`);
+            .setAuthor(`\`Hãy trả lời trong 5p\``)
+            .setDescription(`Bạn có muốn hiến tế ${toBan}?`);
 
         // Send the message
         await message.channel.send(promptEmbed).then(async msg => {
             // Await the reactions and the reactioncollector
-            const emoji = await promptMessage(msg, message.author, 60, ["✅", "❌"]);
+            const emoji = await promptMessage(msg, message.author, 300, ["✅", "❌"]);
 
             // Verification stuffs
             if (emoji === "✅") {
                 try {
                     if (msg.deletable) msg.delete();
-                    await toBan.send(`Alo ông vừa bị ban ở server \`${toBan.guild.name}\` Ông xem lại thế nào đi chứ. Lý do ông bị ban: \`${reason}\``);
+                    await toBan.send(`Alo ông vừa bị hiến ở server \`${toBan.guild.name}\` Ông xem lại thế nào đi chứ. Lý do ông bị hiến tế: \`${reason}\``);
                     toBan.ban({ reason: reason });
                     logChannel.send(embed);
                 }
@@ -85,7 +85,7 @@ module.exports = {
                 };
             } else if (emoji === "❌") {
                 msg.delete();
-                message.reply(`\`Đã huỷ ban\``)
+                message.reply(`\`Mọi thứ đã xong !\``)
                     .then(m => m.delete({ timeout: 10000 }));
             }
         });
