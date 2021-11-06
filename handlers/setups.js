@@ -279,33 +279,7 @@ module.exports = (client) => {
     });
     const { MessageEmbed } = require("discord.js");
     const { stripIndents } = require("common-tags");
-    function getAll(client, guild) {    
-        const embed = new MessageEmbed()
-            .setColor(config.colors.yes)
-            .setTitle('Menu Trợ giúp - CẢM ƠN ĐÃ MỜI TÔI VÀO SERVER!')
-                .addField("**__Người sáng lập:__**", `
-                >>> <@420506395046182912> \` [facebook](https://www.facebook.com/Khoilcm.vn/) | [MỜI BOT](https://discord.com/api/oauth2/authorize?client_id=824484909002260511&permissions=8&scope=bot)
-                `)
-            .setFooter("[CMD Name]", client.user.displayAvatarURL())
-            
-            const commands = (category) => {
-                return client.commands
-                    .filter(cmd => cmd.category === category)
-                    .map(cmd => `\`${cmd.name}\``)
-                    .join(", ");
-            }
-        
-            const info = client.categories
-                .map(cat => stripIndents`**__${cat[0].toUpperCase() + cat.slice(1)}__** \n> ${commands(cat)}`)
-                .reduce((string, category) => string + "\n\n" + category);
-        let channel = guild.channels.cache.find(
-            channel =>
-              channel.type === "text" &&
-              channel.permissionsFor(guild.me).has("SEND_MESSAGES")
-          );
-         channel.send(embed.setDescription(info.substr(0,1950)));
-         channel.send(" Discord của Bot: https://discord.gg/7Nwwffs5pK")
-        }
+//kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
     client.on('voiceStateUpdate', (oldState,newState) => {
         if(newState.id === client.user.id && oldState.serverDeaf === true && newState.serverDeaf === false)
             {
