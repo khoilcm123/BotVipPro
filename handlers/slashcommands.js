@@ -1,4 +1,4 @@
-const config = require("../config.json")
+//const config = require("../config.json")
 console.log("LOADING SLASH COMMANDS...".brightCyan)
 const Discord = require("discord.js");
 module.exports = (client) => {
