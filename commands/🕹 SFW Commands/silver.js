@@ -6,7 +6,7 @@ module.exports = {
     category: 'vui',
     description: '\`Ảnh Silver ( Thêm vào cho có )\`',
     aliases: ['bac', 'silver'],
-    usage:"!silver",
+    usage:"$silver",
     cooldown: 3,
     run: async (client, message, args) => {
         const folder = readdirSync("././assets/silver");
