@@ -16,7 +16,7 @@ module.exports = {
     const embed = new Discord.MessageEmbed()
     .setTitle(`🦝 GẤU MÈO 🦝`)
     .setImage(img)
-    .setFooter(`Bot made in Nguyễn vinh | được yêu cầu bởi: ${message.member.displayName}`,  message.author.displayAvatarURL({ dynamic: true }))
+    .setFooter(`Cute Khoi's Bot | được yêu cầu bởi: ${message.member.displayName}`,  message.author.displayAvatarURL({ dynamic: true }))
     .setTimestamp()
     .setColor(message.guild.me.displayHexColor);
     message.channel.send(embed);
