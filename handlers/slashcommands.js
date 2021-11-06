@@ -27,7 +27,7 @@ client.on('ready', () => {
             description: "Mời Bot đến máy chủ của riêng bạn và có được trải nghiệm âm nhạc đỉnh cao"
         }
     });
-    client.ws.on('INTERACTION_CREATE', async interaction => {
+    //client.ws.on('INTERACTION_CREATE', async interaction => {
         let prefix = await client.settings.get(interaction.guild_id, `prefix`);
         if (prefix === null) prefix = config.prefix;
 
