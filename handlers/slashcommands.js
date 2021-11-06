@@ -33,7 +33,15 @@ client.on('ready', () => {
 
         const command = interaction.data.name.toLowerCase();
         const args = interaction.data.options;
-//sua cho nay nha
+	let inviteembed = new Discord.MessageEmbed()
+	.setColor(config.colors.yes)
+	.setTitle("Invite me now!")
+	.setDescription(`[Mời Bot vào server](https://discord.com/api/oauth2/authorize?client_id=824484909002260511&permissions=8&scope=bot)
+        
+        [DISCORD SERVER](https://discord.gg/7Nwwffs5pK)
+           |   [FACEBOOK](https://www.facebook.com/Khoilcm.vn/)   |   🇻🇳 Cảm ơn vì đã mời!`)
+	.setFooter(client.user.username + " | Syntax:  <>...must    []...optional", client.user.displayAvatarURL())
+	.setAuthor(interaction.member.user.username,  client.user.displayAvatarURL(), "hế hế")
 	let totalMembers = client.guilds.cache.reduce((c, g) => c + g.memberCount, 0);
             let days = Math.floor(client.uptime / 86400000);
             let hours = Math.floor(client.uptime / 3600000) % 24;
